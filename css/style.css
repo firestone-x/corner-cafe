@@ -1,0 +1,315 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        font-family: 'Inconsolata', sans-serif;
+        background: #F7F5F2;
+    }
+    
+    p {
+        line-height: 2rem;
+    }
+    
+    .header-container {
+        position: relative;
+    }
+    
+    .header {
+        padding: 5px;
+        background-color: #211c16;
+        color: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 12;
+    }
+    
+    .header h1 {
+        font-family: "Satisfy";
+    }
+    
+    .header a {
+        color: #F7F5F2;
+    }
+    
+    .nav a {
+        color: #FFF;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .nav a:hover {
+        border-bottom: 1px solid #FFF;
+    }
+    
+    .nav {
+        list-style: none;
+        display: flex;
+        padding: 1rem;
+    }
+    
+    .nav li {
+        margin-left: 1.2rem;
+        font-size: 1.5rem;
+        display: inline-block;
+        position: relative;
+        padding: .6rem .8rem;
+        cursor: pointer;
+        z-index: 5;
+    }
+    
+    .drop {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown {
+        display: none;
+        position: absolute;
+        background-color: #211c16;
+        min-width: 60px;
+        z-index: 1;
+    }
+    
+    .drop:hover .dropdown {
+        display: block;
+    }
+    
+    .dropdown li {
+        margin: 0;
+        font-size: 1.4rem;
+    }
+    
+    .hero {
+        background: url("../img/cafe_outside.jpg") 50% no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hero h1 {
+        color: #F7F5F2;
+        font-size: 5rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    
+    .hero h1 span {
+        border-bottom: 1px solid #FFF;
+        padding-bottom: 3px;
+    }
+    
+    .section {
+        padding: 50px 20px;
+        position: relative;
+        overflow: hidden;
+        background: #F7F5F2;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 10px auto;
+        background: #F7F5F2;
+        padding: 50px 80px;
+        box-shadow: 0 30px 60px -12px rgba(50, 50, 93, .25), 0 18px 36px -18px rgba(0, 0, 0, .3), 0 -12px 36px -8px rgba(0, 0, 0, .025);
+    }
+    
+    h2 {
+        color: #111;
+        border-bottom: 1px solid #111;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 20px 0;
+        letter-spacing: 2px;
+        padding: 6px 8px;
+    }
+    
+    .about h2,
+    .contact h2 {
+        display: inline-block;
+        line-height: 3rem;
+    }
+    
+    .about p {
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+    
+    .info {
+        position: relative;
+    }
+    
+    .info img,
+    .menu img {
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        max-width: 1200px;
+        max-height: 800px;
+        box-shadow: 0 30px 60px -12px rgba(50, 50, 93, .25), 0 18px 36px -18px rgba(0, 0, 0, .3), 0 -12px 36px -8px rgba(0, 0, 0, .025);
+    }
+    
+    .menu h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .menu h3 {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .menu-header h2 {
+        display: inline-block;
+    }
+    
+    .translucent {
+        position: absolute;
+        top: 5%;
+        left: 8%;
+        width: 100%;
+        display: block;
+        line-height: 3rem;
+        padding: 30px 0;
+        color: #FFF;
+        border: none;
+    }
+    
+    .contact h2 {
+        margin: 15px 0;
+    }
+    
+    form {
+        margin-top: 15px;
+    }
+    
+    form input[type="text"],
+    form input[type="textarea"],
+    form input[type="email"],
+    form input[type="number"] {
+        border: 0;
+        border-bottom: 1px solid #B4BECB;
+        width: 100%;
+        padding: 5px;
+        font-size: 13px;
+        margin: 10px 0;
+        background: #F7F5F2;
+    }
+    
+    form input:focus {
+        outline: none;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 10px 30px;
+        cursor: pointer;
+        color: #111;
+        background-color: transparent;
+        border: 1px solid #111;
+        margin-top: 20px;
+        letter-spacing: 1px;
+    }
+    
+    .btn:hover {
+        transform: scale(.98);
+    }
+    
+    footer {
+        background-color: #d3d2d4;
+        color: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1.2rem 2rem;
+    }
+    
+    .social a>img {
+        width: 30px;
+        height: 30px;
+        margin-left: 3rem;
+        color: #FFF;
+    }
+    
+    @media(max-width:960px) {
+        .hero h1 {
+            font-size: 35px;
+            line-height: 3rem;
+        }
+        .info {
+            display: block;
+        }
+        .info h2 {
+            width: 80%;
+            margin-left: 20px;
+            top: 50px;
+            padding: 0 10px;
+            text-align: left;
+        }
+        .container {
+            padding: 1.5rem;
+            box-shadow: none;
+            display: block;
+        }
+        .about p {
+            font-size: 1rem;
+            padding: 1rem;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+            box-shadow: none;
+        }
+        .info img,
+        .menu img {
+            box-shadow: none;
+        }
+        .translucent {
+            position: static;
+            color: #111;
+            font-size: 1.3rem;
+            margin: 20px 0;
+            padding: 0;
+        }
+        .hero {
+            height: 50vh;
+        }
+    }
+    
+    @media(max-width: 1220px) {
+        .hero img {
+            width: 100%;
+        }
+    }
+    
+    @media(max-width: 768px) {
+        footer {
+            display: grid;
+            padding: 1rem;
+            grid-row: auto;
+        }
+        .social a>img {
+            padding: .2rem 0;
+        }
+    }
